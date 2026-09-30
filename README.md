@@ -43,14 +43,14 @@ After deploying the new rule to the cloud engine, I ran the simulation command i
 #### Phase 1: Running the Attacker Simulation
 *Verifying endpoint execution. This screenshot shows the local terminal processing the privilege audit command.*
 
-![Attacker Simulation Check](IMG1.JPG)
+![Attacker Simulation Check](IMG1.jpg)
 
 #### Phase 2: Building the Detection Rule
 *Configuring the logic. This screenshot shows my custom YAML/JSON rule structure saved successfully into the detection console.*
 
-![Detection Signature Commitment](IMG2.JPG)
+![Detection Signature Commitment](IMG2.jpg)
 
 #### Phase 3: The Live Alert Capture
 *Validating the defense loop. The main dashboard catches the activity and logs the high-fidelity alert live.*
 
-![Production Alert Mitigation](IMG3.JPG)
+![Production Alert Mitigation](IMG3.jpg)
