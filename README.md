@@ -88,4 +88,4 @@ Switching to a Blue Team Network Analyst framework, I engineered a series of mul
 #### Phase 1: Analyzing the Attack Success Status (HTTP 404 Verification)
 What I learned from my Year 1 Web and Networking modules is that every server returns a status code for a request. This terminal screenshot captures my script finding the attack string. Because the server returned a '404 Not Found' status code, it proves that while the attacker successfully sent the SQL injection attempt, the attack failed because they targeted a web path that doesn't exist on my server.
 
-![Web Ingestion Threat Hunt](IMG4.JPEG)
+![Web Ingestion Threat Hunt](IMG4.JPG)
