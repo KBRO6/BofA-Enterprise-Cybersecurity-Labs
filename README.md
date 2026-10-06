@@ -54,3 +54,38 @@ After deploying the new rule to the cloud engine, I ran the simulation command i
 *Validating the defense loop. The main dashboard catches the activity and logs the high-fidelity alert live.*
 
 ![Production Alert Mitigation](IMG3.jpg)
+
+
+---
+
+## Lab 2: Enterprise Web Server Threat Hunting & Log Analytics
+
+### Project Breakdown
+Public-facing web portals across financial institutions represent significant attack surfaces subjected to continuous automated exploitation scanning. This project focuses on configuring an enterprise Linux web service runtime baseline, simulating an advanced web application vulnerability exploit (SQL Injection), and executing command-line string analytics to perform proactive threat identification using my Year 1 knowledge of HTTP protocols.
+
+* Target Asset: Nginx Enterprise Web Infrastructure Instance (Ubuntu Runtime Environment)
+* Ingestion Target: Native HTTP Application Architecture Access Logs (access.log)
+* Analytics Toolset: Bash Core Shell Scripting, Regular Expression Filters (grep, awk, sort, uniq)
+* Analyst Objective: Isolate active exploit signatures, verify backend payload execution statuses, and parse malicious traffic matrices.
+
+---
+
+### How I Built It
+
+#### 1. Deploying the Web Ingestion Service
+I provisioned and initialized a native production-style Nginx web architecture layer across an isolated Linux target asset. This established standard network socket binding protocols over default HTTP interface ports and initialized granular transaction logging formats to map incoming network frames.
+
+#### 2. Simulating Application-Layer Web Exploitations
+Acting as an external threat actor performing application-layer reconnaissance, I generated a synthetic attack traffic loop aimed at exposing common web application logic flows. I formulated an unauthenticated administrative authentication bypass string ('--OR+1=1) to exploit inputs via native terminal commands.
+
+#### 3. Engineering the Log Analysis and Threat Hunting Pipeline
+Switching to a Blue Team Network Analyst framework, I engineered a series of multi-stage Bash analytics filters to parse the server's raw application access log streams (/var/log/nginx/access.log). Using regular expressions, I isolated malicious traffic signatures from benign user transactions. I then constructed an awk processing sequence to parse the fields of the unstructured log text, extracting the exact source IP addresses, HTTP command strings, requested endpoint paths, and subsequent server status codes ($1, $6, $7, $9).
+
+---
+
+### Technical Validation Evidence
+
+#### Phase 1: Analyzing the Attack Success Status (HTTP 404 Verification)
+What I learned from my Year 1 Web and Networking modules is that every server returns a status code for a request. This terminal screenshot captures my script finding the attack string. Because the server returned a '404 Not Found' status code, it proves that while the attacker successfully sent the SQL injection attempt, the attack failed because they targeted a web path that doesn't exist on my server.
+
+![Web Ingestion Threat Hunt](IMG6.JPEG)
